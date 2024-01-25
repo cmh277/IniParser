@@ -1,0 +1,12 @@
+#ifndef INIPARSER_GLOBAL_H
+#define INIPARSER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(INIPARSER_LIBRARY)
+#  define INIPARSERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define INIPARSERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // INIPARSER_GLOBAL_H
